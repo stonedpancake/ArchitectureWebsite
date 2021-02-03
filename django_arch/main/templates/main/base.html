@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>{% block title %}{% endblock %}</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>{% block 'title' %}{% endblock %}</title>
 </head>
     <body>
 
@@ -16,10 +16,9 @@
           <a class="p-2 text-dark" href="#">Pricing</a>
           </nav>
           <a class="btn btn-outline-primary" href="#">Sign up</a>
-        </header>% block title %}{% endblock %}
+        </header>
 
-        {% block content %}{% endblock %}
+        {% block 'content' %}{% endblock %}
 
-        <script src="app.js"></script>
     </body>
 </html>
